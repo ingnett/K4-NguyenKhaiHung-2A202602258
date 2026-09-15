@@ -40,14 +40,16 @@ Chưa có biên bản kiểm chéo để kết luận. Các luật cần ghi rõ
 
 | Evidence | Giá trị |
 | --- | --- |
-| SHA-256 từ `evidence/pre-gold/clip_01/manifest.json` | `Chưa có manifest` |
-| Thời điểm khóa | `Chưa ghi nhận` |
-| Số row / frame / track trước khi mở reference | `Chưa có evidence pre-gold` |
+| SHA-256 từ `evidence/pre-gold/clip_01/manifest.json` | `771009c934de4096b8b675b799f5bf746995b3836a6a0b2137a595c53d45af43` |
+| Thời điểm khóa | `2026-09-15T10:23:00.113069+00:00 UTC` |
+| Số row / frame / track trước khi mở reference | `714 / 190 / 10` |
 
 | | HOTA | DetA | AssA | LocA | IDF1 | MOTA | MOTP | FP | FN | IDSW |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Bản pre-gold | | | | | | | | | | |
+| Bản pre-gold | 0.743 | 0.667 | 0.831 | 0.854 | 0.890 | 0.754 | 0.837 | 141 | 0 | 0 |
 | Sau rework | 0.743 | 0.667 | 0.831 | 0.854 | 0.890 | 0.754 | 0.837 | 141 | 0 | 0 |
+
+> SHA-256 của annotation hiện tại trùng với snapshot pre-gold, nên chưa có thay đổi giữa hai mốc.
 
 Qua cổng (`IDF1 >= 0.80`, `MOTA >= 0.75`, `MOTP >= 0.70`): **có**
 
@@ -107,7 +109,7 @@ Bổ sung vào `GUIDELINE_MINI.md` các luật có frame cụ thể: giữ ID ba
 
 - [x] `annotations/clip_01/gt.txt`
 - [x] `annotations/clip_02/gt.txt`
-- [ ] `evidence/pre-gold/clip_01/gt.txt` và `manifest.json` (chưa có trong workspace)
+- [x] `evidence/pre-gold/clip_01/gt.txt` và `manifest.json`
 - [x] `GUIDELINE_MINI.md` đã điền
 - [x] `outputs/eval_vs_gold.json`
 - [x] `outputs/model_bytetrack_clip_01.txt`
